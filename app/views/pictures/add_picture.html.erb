@@ -1,0 +1,39 @@
+<h1>Post a picture of yourself in an outfit you love, <%= @user.first_name %>.</h1>
+
+<form action="/profile/<%= @user.id %>/add/personal" method="get">
+  Image URL: <input type="text" name="source" class="span6"><br>
+  <br>
+  Comment: <textarea name="comment" class="span6"></textarea><br>
+  <br>
+  Category: <select name="category">
+    <option value="Work" selected>Work</option>
+    <option value="Going-Out">Going Out</option>
+    <option value="Casual">Casual</option>
+        <option value="Casual">Lounge</option>
+  </select></br>
+  <br>
+
+  Submit: <input class="btn-success btn-large" type="submit" name="submit"></br>
+<br>
+<br>
+</form>
+
+<h1>Post pictures of outfits on the internet you like.</h1>
+
+<form action="/profile/<%= @user.id %>/add/favorite" method="get">
+  Image URL: <input type="text" name="source" class="span6"><br>
+  <br>
+  Comment: <textarea name="comment" class="span6"></textarea><br>
+  <br>
+  Category: <select name="category">
+    <option value="Work" selected>Work</option>
+    <option value="Going-Out">Going Out</option>
+    <option value="Casual">Casual</option>
+        <option value="Casual">Lounge</option>
+  </select></br>
+  <br>
+
+  Submit: <input class="btn-success btn-large" type="submit" name="submit"></br>
+<br>
+<br>
+</form>
